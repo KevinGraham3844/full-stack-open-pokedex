@@ -1,4 +1,4 @@
-name: Deployment pipeline
+name: Simple Deployment pipeline
 'on':
     push:
         branches: '*'
