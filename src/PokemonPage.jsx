@@ -17,6 +17,7 @@ const PokemonPage = ({ previous, next }) => {
   if (error) {
     return <ErrorMessage error={error} />
   }
+  // eslint-disable-next-line no-console
   console.log('next: ', next.name, 'previous: ', previous.name)
   const { type } = pokemon.types.find((type) => type.slot === 1)
   const stats = pokemon.stats.map((stat) => ({
