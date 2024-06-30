@@ -1,4 +1,5 @@
 // @ts-check
+/* eslint-disable */
 const { test, expect } = require('@playwright/test');
 
 test.beforeEach(async ({ page }) => {
