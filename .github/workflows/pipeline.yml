@@ -1,7 +1,10 @@
 name: Simple Deployment pipeline
 'on':
     push:
-        branches: '*'
+        branches: [main]
+    pull_request:
+        branches: [main]
+        types: [opened, synchronize]
 jobs:
     simple_deployment_pipeline:
         runs-on: ubuntu-20.04
