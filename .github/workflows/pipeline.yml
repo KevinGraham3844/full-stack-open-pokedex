@@ -1,7 +1,7 @@
 name: Simple Deployment pipeline
 'on':
     push:
-        branches: [ main, feature-practice ]
+        branches: [ main ]
 jobs:
     simple_deployment_pipeline:
         runs-on: ubuntu-20.04
