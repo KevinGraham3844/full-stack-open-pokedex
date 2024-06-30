@@ -75,7 +75,7 @@ module.exports = defineConfig({
     command: 'node app.js',
     url: 'http://127.0.0.1:5000',
     timeout: 300 * 1000,
-    reuseExistingServer: true,
+    reuseExistingServer: !process.env.CI,
   }
 });
 
