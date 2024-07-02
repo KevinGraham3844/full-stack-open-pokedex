@@ -42,7 +42,7 @@ jobs:
       steps:
         - uses: actions/checkout@v4 
         - name: Bump version and push tag
-          uses: anothrNick/github-tag-action@v1.67.0
+          uses: anothrNick/github-tag-action@master
           env: 
             GITHUB_TOKEN: ${{ secrets.FLY_API_TOKEN }}
             DEFAULT_BUMP: patch
