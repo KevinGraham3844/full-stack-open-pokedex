@@ -38,7 +38,9 @@ jobs:
               if: success()
               with:
                 severity: info
-                details: A new version of Pokedex deployed
+                color: '#00FF00'
+                description: to https://full-stack-open-pokedex-falling-surf-2749.fly.dev by KevinGraham3844
+                text: A new version of Pokedex deployed
                 webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
     tag_release:
       needs: [simple_deployment_pipeline]
