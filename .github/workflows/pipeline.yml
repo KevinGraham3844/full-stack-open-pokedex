@@ -49,7 +49,7 @@ jobs:
                 severity: error
                 color: '#ff0000'
                 text: Build failed
-                description: commit ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} by KevinGraham3844 broke the build :(
+                description: commit https://github.com/${{github.repository}}/commit/${{github.sha}} by KevinGraham3844 broke the build :(
                 webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
 
     tag_release:
